@@ -25,3 +25,6 @@ class TestDaySummaryApi:
         )
         expected = "2021-01-01"
         assert actual == expected
+
+    def test_fail(self):
+        assert False
