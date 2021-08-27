@@ -4,13 +4,13 @@
         "aws_region": "us-east-1",
         "project_name": "mercado-bitcoin",
         "runtime": "python3.8",
-        "s3_bucket": "zappa-ddwyelw2n",
+        "s3_bucket": "zappa-xveunppjs",
         "environment_variables": {"STAGE": "prod"},
         "events": [
             {
                 "function": "mercado_bitcoin.lambda_function.lambda_handler",
                 "expression": "rate(1 minute)"
-            },
+            }
         ],
         "memory_size": 128,
         "apigateway_enabled": false
